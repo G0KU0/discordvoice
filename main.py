@@ -6,11 +6,11 @@ import requests
 import websocket
 from keep_alive import keep_alive
 
-status = "online" #online/dnd/idle
+status = "dnd" #online/dnd/idle
 
 GUILD_ID = os.getenv("GUILD_ID")
 CHANNEL_ID = os.getenv("CHANNEL_ID")
-SELF_MUTE = True
+SELF_MUTE = False
 SELF_DEAF = False
 
 usertoken = os.getenv("TOKEN")
